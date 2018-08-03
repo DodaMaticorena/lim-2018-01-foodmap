@@ -1,0 +1,26 @@
+.select-category {
+  font-family: 'Crimson Text', serif;
+}
+
+#splash-view {
+  position: fixed;  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width:100%;
+}
+
+.splash-img {
+  background-color: #0c0501;
+  height:100%;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#splash-view img {
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+}
