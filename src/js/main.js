@@ -1,5 +1,7 @@
-const firstView = () => {
-  document.querySelector('#splash-view').style.display = 'none';
-  document.querySelector('.container').style.display = 'flex';
-}
-window.onload = setTimeout(firstView, 2000);
+const mapGoogle = {
+  center: new google.maps.LatLng(37.7831,-122.4039),
+  zoom: 12,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+
+new google.maps.Map(document.querySelector('#map'), mapGoogle);
