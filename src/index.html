@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/icon-venteycome.ico">
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,19 +14,34 @@
 <body>
   <!-- Main site -->
   <div class="container">
-    <div class="row">
-      <div>
- 
-
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <header>
+          <h1>Vente y come</h1>
+        </header>
+        <!-- <div class="text-center">
+            <img src="img/home.png" alt="" class="rounded fixed-top img-home">
+        </div> -->
+      </div> 
+      <div class="col-12">
+        <div id="map"></div>
       </div>
+      <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
+        <div class="dropdown-filter">
+          <label class="filter-options">Encuentra restaurantes por:</label>
+          <!-- <button class="btn btn-light dropdown-toggle" type="button">Encuentra restaurantes por:</button> -->
+          <!-- <input type="text" placeholder="Encuentra restaurantes por:"> -->
+          <select class="btn btn-light dropdown-toggle" id="filter-options">
+            <option value="food-type">Tipo de comida</option>
+            <option value="prices">Precio</option>
+            <option value="name-order">Orden alfabético</option>
+          </select>
+        </div>
+      </div>  
     </div>
-    <div id="map"></div>
-
-  
   </div>
 
-  
-  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>  
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBywAkWah5L6_OKx9LeJhhfIdDwH9n9QBw&callback=initMap"></script> 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
