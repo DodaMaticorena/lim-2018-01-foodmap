@@ -63,4 +63,12 @@ Usé Figma para realizar el diseño de la idea que tenía para la reto FoodMap.
 
 A los usuarios les gustó el diseño y el color de la primera vista, con el nombre de la app. 
 
+## Proceso
+
+Primero usé dos html, uno para la vista splash y otro para la vista principal, pero luego intenté con solo un html, pero no pintaba el mapa de Google, así que separé de nuevo los html debido al conflicto. 
+
+Al principio usé un solo archivo javascript, pero la página se actualizaba cada 2 segundos, entonces separé a dos javascripts.
+
+Tuve problemas en el maquetado al poner la imagen y el mapa. No pude cambiar las dimensiones de la imagen, así que, la borré y solo puse el nombre. 
+
 
